@@ -441,8 +441,8 @@ u4 = crt(nc1,nc2,f1,f2) # non carré mod f1, non carré mod f2
 print("f1 vaut :\n", f1)
 print("f2 vaut :\n", f2)
 print("Cas ou u est carré mod f1 et mod f2 :\n", gcd(f,u1^((q^d-1)/2)-1))
-print("Cas ou u est carré mod f1 mais pas mod f2 :\n", gcd(f,u2^((q^d-1)/2)-1))
-print("Cas ou u n'est pas carré mod f1 mais l'est mod f2 :\n", gcd(f,u3^((q^d-1)/2)-1))
+print("Cas ou u n'est pas carré mod f1 mais l'est mod f2 :\n", gcd(f,u2^((q^d-1)/2)-1))
+print("Cas ou u est carré mod f1 mais pas mod f2 :\n", gcd(f,u3^((q^d-1)/2)-1))
 print("Cas ou u n'est carré ni mod f1 ni mod f2 :\n", gcd(f,u4^((q^d-1)/2)-1))
-print("""\nOn observe que si u est carré mod f1 et f2, on a f1*f2, si u est carré mod f1 et pas f2 on obtient f2 
+print("""\nOn observe que si u est carré mod f1 et f2, on a f1*f2, si u est carré mod f1 et pas f2 on obtient f1 
 et vice-versa, et si u n'est carré ni mod f1 ni f2, on obtient 1""")
