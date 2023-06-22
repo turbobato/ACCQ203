@@ -288,7 +288,7 @@ def LogIndice(g,b,y):
         q = primes.next(q)
     
     k = len(primes_y)
-    M = (Zn^k).change_ring(ZZ)
+    M = (ZZ^k)/((p-1)*ZZ^k)
     alphas = []
     v = []
     i = 1
@@ -300,7 +300,7 @@ def LogIndice(g,b,y):
             v.append(vi)
             alphas.append(alpha)
             i+=1
-    while M.span(v) != M :
+    while M.submodule(v) != M :
         alphas = []
         v = []
         i = 1
